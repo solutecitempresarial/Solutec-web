@@ -8,18 +8,21 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #0b1329; color: #ffffff; line-height: 1.6; }
         header { background: #070d1d; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; }
-        .logo { font-size: 24px; font-weight: bold; color: #38bdf8; }
+        .logo { font-size: 24px; font-weight: bold; color: #38bdf8; display: flex; align-items: center; gap: 10px; }
         .hero { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
         .hero h1 { font-size: 42px; margin-bottom: 20px; color: #f8fafc; }
         .hero p { font-size: 18px; color: #94a3b8; max-width: 700px; margin: 0 auto 30px auto; }
         .btn-whatsapp { background-color: #22c55e; color: white; padding: 15px 30px; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 8px; display: inline-block; transition: 0.3s; box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4); }
-        .btn-whatsapp:hover { background-color: #16a34a; }
+        .btn-whatsapp:hover { background-color: #16a34a; transform: translateY(-2px); }
         .services { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
         .services h2 { text-align: center; font-size: 32px; margin-bottom: 40px; color: #38bdf8; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #111827; padding: 30px; border-radius: 12px; border: 1px solid #1f2937; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: #111827; padding: 30px; border-radius: 12px; border: 1px solid #1f2937; transition: 0.3s; }
+        .card:hover { border-color: #38bdf8; transform: translateY(-5px); }
         .card h3 { margin-bottom: 15px; color: #f3f4f6; font-size: 20px; }
-        .card p { color: #9ca3af; font-size: 14px; }
+        .card p { color: #9ca3af; font-size: 14px; margin-bottom: 20px; }
+        .card-btn { color: #38bdf8; text-decoration: none; font-weight: bold; font-size: 14px; }
+        .card-btn:hover { text-decoration: underline; }
         footer { text-align: center; padding: 40px; background: #050811; color: #6b7280; font-size: 14px; border-top: 1px solid #1e293b; }
     </style>
 </head>
@@ -27,13 +30,13 @@
 
     <header>
         <div class="logo">💻 SOLUTEC</div>
-        <div><a href="https://wa.me/573204659435" style="color: #38bdf8; text-decoration: none; font-weight: bold;">WhatsApp: 320 465 9435</a></div>
+        <div><a href="https://wa.me/573204659435?text=Hola%20SOLUTEC,%20necesito%20soporte%20técnico" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: bold;">💬 WhatsApp: 320 465 9435</a></div>
     </header>
 
     <section class="hero">
         <h1>Soporte TI y Mantenimiento de Computadores</h1>
-        <p>Soluciones tecnológicas integrales, rápidas y seguras para hogares, empresas y negocios. Más de 10 años de experiencia[cite: 8, 12]. ¡Facturación con RUT[cite: 12]!</p>
-        <a href="https://wa.me/573204659435" class="btn-whatsapp">📲 Escríbenos por WhatsApp</a>
+        <p>Soluciones tecnológicas integrales, rápidas y seguras para hogares, empresas y negocios. Más de 10 años de experiencia. ¡Facturación con RUT!</p>
+        <a href="https://wa.me/573204659435?text=Hola%20SOLUTEC,%20estoy%20en%20su%20web%20y%20quiero%20cotizar%20un%20servicio" class="btn-whatsapp" target="_blank">📲 Escríbenos por WhatsApp</a>
     </section>
 
     <section class="services">
@@ -41,26 +44,30 @@
         <div class="grid">
             <div class="card">
                 <h3>🛠️ Mantenimiento PC</h3>
-                <p>Mantenimiento preventivo y correctivo de computadores de escritorio y portátiles. Optimización de rendimiento y limpieza de virus[cite: 9, 12].</p>
+                <p>Mantenimiento preventivo y correctivo de computadores de escritorio y portátiles. Optimización de rendimiento y limpieza de virus.</p>
+                <a href="https://wa.me/573204659435?text=Hola,%20me%20interesa%20el%20mantenimiento%20de%20computadores" class="card-btn" target="_blank">Consultar servicio →</a>
             </div>
             <div class="card">
                 <h3>🌐 Redes y Cámaras CCTV</h3>
-                <p>Configuración de redes WiFi, routers, conectividad e instalación y soporte de sistemas de seguridad y cámaras de vigilancia[cite: 10, 12].</p>
+                <p>Configuración de redes WiFi, routers, conectividad e instalación y soporte de sistemas de seguridad y cámaras de vigilancia.</p>
+                <a href="https://wa.me/573204659435?text=Hola,%20necesito%20soporte%20en%20redes%20o%20cámaras%20CCTV" class="card-btn" target="_blank">Consultar servicio →</a>
             </div>
             <div class="card">
                 <h3>🌐 Páginas Web y Correos</h3>
-                <p>Diseño y desarrollo de páginas web profesionales, correos corporativos personalizados y configuración de fichas de Google Business[cite: 10, 12].</p>
+                <p>Diseño y desarrollo de páginas web profesionales, correos corporativos personalizados y configuración de fichas de Google Business.</p>
+                <a href="https://wa.me/573204659435?text=Hola,%20me%20interesa%20una%20página%20web%20o%20correos" class="card-btn" target="_blank">Consultar servicio →</a>
             </div>
             <div class="card">
-                <h3>📞 Soporte a Domicilio y Remoto</h3>
-                <p>Atención presencial en Bogotá y alrededores, y soporte remoto disponible para empresas y negocios a nivel nacional[cite: 12].</p>
+                <h3>📞 Soporte a Domicilio</h3>
+                <p>Atención presencial en Bogotá y alrededores, y soporte remoto disponible para empresas y negocios a nivel nacional.</p>
+                <a href="https://wa.me/573204659435?text=Hola,%20solicito%20soporte%20a%20domicilio" class="card-btn" target="_blank">Consultar servicio →</a>
             </div>
         </div>
     </section>
 
     <footer>
         <p>© 2026 SOLUTEC - Servicios y Soporte TI. Todos los derechos reservados.</p>
-        <p>Bogotá - Colombia | WhatsApp: 320 465 9435[cite: 6, 12]</p>
+        <p>Bogotá - Colombia | WhatsApp: 320 465 9435</p>
     </footer>
 
 </body>
